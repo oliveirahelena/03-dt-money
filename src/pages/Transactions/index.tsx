@@ -1,4 +1,5 @@
 import { Header } from '../../components/Header'
+import { Summary } from '../../components/Summary'
 
 import {
     PriceHighlight,
@@ -11,6 +12,7 @@ import {
     return (
       <div>
         <Header />
+        <Summary />
   
         <TransactionsContainer>
   
