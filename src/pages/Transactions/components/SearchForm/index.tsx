@@ -13,13 +13,10 @@ type SearchFormInputs = z.infer<typeof searchFormSchema>
 export function SearchForm() {
   const {
     register,
-    handleSubmit,
     formState: { isSubmitting },
   } = useForm<SearchFormInputs>({
     resolver: zodResolver(searchFormSchema),
   })
-
-  async function handleSearchTransactions(data: SearchFormInputs) {}
 
   return (
     <SearchFormContainer>
